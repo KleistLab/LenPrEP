@@ -1,6 +1,6 @@
 # LenPrEP
 
-This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [link text](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export.
+This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [lmfit](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export.
 
 ## Abstract
 

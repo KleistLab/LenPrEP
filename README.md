@@ -1,6 +1,7 @@
 # LenPrEP
 
-10.5281/zenodo.16612336.
+[![Zenodo](https://img.shields.io/badge/Zonodo-doi:10.5281/zenodo.14154555-green)](https://doi.org/10.5281/zenodo.16612336)
+
 This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [lmfit](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export.
 
 ## Abstract

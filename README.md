@@ -1,18 +1,45 @@
 # LenPrEP
 
-[![Zenodo](https://img.shields.io/badge/Zonodo-doi:10.5281/zenodo.14154555-green)](https://doi.org/10.5281/zenodo.16612336)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Zenodo](https://img.shields.io/badge/Zonodo-doi:10.5281/zenodo.14154555-green)](https://doi.org/10.5281/zenodo.16612336) 
+
 
 This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [lmfit](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export.
 
-## Abstract
+## Table of Contents
 
-Take from Paper.
+- [System requirements](#system-requirements)
+    - [Dependencies](#dependencies)
+- [Folder Structure](#folder-structure)
+- [Clinical Data](#clinical-data)
+- [Installation](#installation)
+- [Code](#code)
+  - [Running from Terminal](#running-from-terminal)
+  - [Arguments](#arguments)
+  - [Show CLI Help](#show-cli-help)
+
+## System requirements
+
+The code was tested on Ubuntu 24.04.2 LTS (Noble Numbat) with Linux kernel version 6.14.0-24-generic.
+
+### Dependencies
+
+| Package     | Version  |
+|-------------|----------|
+| Python      | ≥ 3.12   |
+| numpy       | 2.1.3    |
+| pandas      | 2.2.3    |
+| scipy       | 1.14.1   |
+| matplotlib  | 3.9.2    |
+| lmfit       | 1.3.2    |
+
+They are included in `requirements.txt` and can be installed as explained in [Installation](#installation).
 
 ## Folder Structure
 
 ```
 project-root/
 ├── Code/
+|   ├── requirements.txt        # python dependencies
 │   ├── cli.py                  # CLI argument parser
 │   ├── run_model.py            # Execute fitting
 │   ├── pk_fitting.py           # PK model fitting
@@ -36,7 +63,7 @@ project-root/
 │   └── PD/                     # PD viral load clinical data (VL, Study 3)
 |
 ├── Results/                    # Output plots and files
-├── README.md                   # Documentation
+└── README.md                   # Documentation
 
 
 ```
@@ -51,6 +78,16 @@ project-root/
 | Study 4  | Phase I, healthy volunteers                          | SC PEG/water suspension | 309, 927 mg                                  |
 | Study 5  | Phase I, healthy volunteers                          | IM ethanol/water        | 5,000 mg with 5% (F1) and 10% ethanol (F2)   |
 
+
+## Installation
+
+```bash
+git clone https://github.com/KleistLab/LenPrEP.git
+cd LenPrEP/Code            # go to folder
+python3 -m venv venv       # create isolated environment
+source venv/bin/activate   # activate it
+pip install -r requirements.txt  # install dependencies
+```
 
 ## Code
 

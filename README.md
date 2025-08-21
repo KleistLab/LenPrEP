@@ -3,7 +3,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Zenodo](https://img.shields.io/badge/Zonodo-doi:10.5281/zenodo.14154555-green)](https://doi.org/10.5281/zenodo.16612336) 
 
 
-This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [lmfit](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export.
+This repository provides a framework for pharmacokinetic (PK) and pharmacodynamic (PD) model fitting of Lenacapavir using clinical data for various dosing routes (oral, subcutaneous, intramuscular). It supports both local and global optimizers via [lmfit](https://lmfit.github.io/lmfit-py/), customizable parameter initialization via .ini files, and automatic plotting and result export. The probability of infection was computed using the following package: (https://github.com/lanmao46/Vectorized_clean.git)
 
 ## Table of Contents
 
@@ -60,7 +60,8 @@ project-root/
 │   │       ├── SC_PEG/         # PEG/water solution (Study 4)
 │   │       ├── SC_AQ1/         # SC aqueous suspension (Study 1)
 │   │       └── SC_AQ2/         # SC aqueous suspension (Study 3)
-│   └── PD/                     # PD viral load clinical data (VL, Study 3)
+│   ├── PD/                     # PD viral load clinical data (VL, Study 3)
+|   └── PI/ 				    # Probability of infection for Fig.6 and S1
 |
 └── README.md                   # Documentation
 

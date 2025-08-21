@@ -62,7 +62,6 @@ project-root/
 │   │       └── SC_AQ2/         # SC aqueous suspension (Study 3)
 │   └── PD/                     # PD viral load clinical data (VL, Study 3)
 |
-├── Results/                    # Output plots and files
 └── README.md                   # Documentation
 
 
